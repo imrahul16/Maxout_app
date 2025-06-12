@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_update_goal"
+        android:title="Update Goal"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_bmi_calculator"
+        android:title="BMI Calculator"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:showAsAction="never" />
+</menu>

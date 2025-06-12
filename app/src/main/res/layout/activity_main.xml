@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Water Intake Progress -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:max="100"
+        android:progress="50"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        android:background="#E0E0E0"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Water Intake Display -->
+    <TextView
+        android:id="@+id/txtWaterIntake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0 / 3000 ml"
+        android:textSize="22sp"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppins_bold"
+        app:layout_constraintTop_toBottomOf="@id/progressBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add 250ml Button -->
+    <Button
+        android:id="@+id/btnAdd250"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Add 250ml 💧"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_bold"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/txtWaterIntake"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Add 500ml Button -->
+    <Button
+        android:id="@+id/btnAdd500"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Add 500ml 💦"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_bold"
+        android:background="@drawable/rounded_button"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnAdd250"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="Reset 🔄"
+        android:textSize="18sp"
+        android:fontFamily="@font/poppins_bold"
+        android:background="@drawable/rounded_red_button"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnAdd500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
