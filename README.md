@@ -33,7 +33,7 @@ MaxOut is a clean, modern, and easy-to-use Android application built using Kotli
 ### Installation
 1. Clone the repository:
   
-   git clone https://github.com/your-username/maxout.git
+   git clone https://github.com/imrahul16/Maxout_app.git
 Open in Android Studio:
 
 
